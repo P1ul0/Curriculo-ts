@@ -15,7 +15,7 @@ export function Repository() {
   const r = repositories.filter(
     (repository) =>
       repository.name === "api-carros" ||
-      repository.name === "Curriculo-React.js" ||
+      repository.name === "agendatarefa" ||
       repository.name === "Calculadora"
   );
 
