@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Accordion, Button } from "react-bootstrap";
 import { api } from "../../Api/Api";
+import "./style.css"
 
 export function Repository() {
   const [repositories, setRepositories] = useState<any[]>([]);
@@ -12,7 +12,7 @@ export function Repository() {
     getRepository();
   });
 
-  const r = repositories.filter(
+  const repository = repositories.filter(
     (repository) =>
       repository.name === "api-carros" ||
       repository.name === "Curriculo-React.js" ||
@@ -21,27 +21,18 @@ export function Repository() {
 
   return (
     <>
-      <Accordion>
-        <Accordion.Item eventKey="0">
-          <Accordion.Header>Repositórios</Accordion.Header>
-          <Accordion.Body>
-            {r.map((repository) => {
-              return (
-                <div>
-                  <h3>{repository.name}</h3>
-                  <Button
-                    variant="success"
-                    size="sm"
-                    href={repository.html_url}
-                  >
-                    Saiba Mais
-                  </Button>
-                </div>
-              );
-            })}
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
+      {repository.map((repository) => {
+        return (
+          <div>
+            <h3>{repository.name}</h3>
+            <button>
+              <a href={repository.html_url}>
+              Saiba Mais
+              </a>
+            </button>
+          </div>
+        );
+      })}
     </>
   );
 }
