@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { api } from "../../Api/Api";
-import "./style.css"
+import "./style.css";
 
 export function Repository() {
   const [repositories, setRepositories] = useState<any[]>([]);
@@ -20,19 +20,24 @@ export function Repository() {
   );
 
   return (
-    <>
-      {repository.map((repository) => {
-        return (
-          <div>
-            <h3>{repository.name}</h3>
-            <button>
-              <a href={repository.html_url}>
-              Saiba Mais
-              </a>
-            </button>
-          </div>
-        );
-      })}
-    </>
+    <main className="body_center">
+      <details className="accordion">
+        <summary className="title">Repositórios</summary>
+        <div className="body_pages">
+          {repository.map((repository) => {
+            return (
+              <div className="body_repository">
+                <h3 className="name_repository">{repository.name}</h3>
+                <button className="btn_repository">
+                  <a className="link_repository" href={repository.html_url}>
+                    Saiba Mais
+                  </a>
+                </button>
+              </div>
+            );
+          })}
+        </div>
+      </details>
+    </main>
   );
 }

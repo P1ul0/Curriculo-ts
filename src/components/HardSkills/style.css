@@ -1,0 +1,37 @@
+.body_skill {
+  width: 1000px;
+  margin: 10px 0;
+}
+
+.title_courses {
+  display: flex;
+  background: #40513b;
+  color: #fff;
+  border-radius: 8px;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title_courses:before {
+  content: "+";
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 5px;
+  width: 20px;
+  text-align: center;
+}
+
+.accordion_courses[open] .title_courses:before {
+  content: "-";
+}
+
+.skill {
+  height: 150px;
+  display: flex;
+  background-color: #edf1d6;
+  border-radius: 5px;
+}
+
