@@ -29,7 +29,7 @@ export function Repository() {
               <div className="body_repository">
                 <h3 className="name_repository">{repository.name}</h3>
                 <button className="btn_repository">
-                  <a className="link_repository" href={repository.html_url}>
+                  <a className="link_repository" href={repository.html_url} target="_blank">
                     Saiba Mais
                   </a>
                 </button>

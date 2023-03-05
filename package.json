@@ -40,6 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ],
-    "include": ["src","index.d.ts"]
+    "include": [
+      "src",
+      "index.d.ts"
+    ]
   }
 }
