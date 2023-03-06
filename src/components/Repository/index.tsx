@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { api } from "../../Api/Api";
 import "./style.css";
+import img from "../../assets/img_github_64.png"
 
 export function Repository() {
   const [repositories, setRepositories] = useState<any[]>([]);
@@ -29,10 +30,27 @@ export function Repository() {
               <div className="body_repository">
                 <h3 className="name_repository">{repository.name}</h3>
                 <button className="btn_repository">
-                  <a className="link_repository" href={repository.html_url} target="_blank">
+                  <a
+                    className="link_repository"
+                    href={repository.html_url}
+                    target="_blank"
+                  >
                     Saiba Mais
                   </a>
                 </button>
+                {repository.name === "agendatarefa"  ?
+                 <a className="img_github"href="https://p1ul0.github.io/agendatarefa/" target="_blank">
+                   <img src={img} alt="" />
+                 </a>:
+               <></>
+              }
+                {repository.name === "Calculadora"  ?
+                 <a className="img_github"href="https://p1ul0.github.io/Calculadora/" target="_blank">
+                   <img src={img} alt="" />
+                 </a>
+               :
+               <></>
+              }
               </div>
             );
           })}

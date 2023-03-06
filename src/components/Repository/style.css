@@ -1,73 +1,69 @@
-
-*{
-    font-family: 'Lato',sans-serif;
+* {
+  font-family: "Lato", sans-serif;
 }
 
 .body_center {
-    width: 1000px;
-    margin: 10px 0;
-    
+  width: 1000px;
+  margin: 10px 0;
 }
 .title {
-    display: flex; 
-    background: #40513B;
-    color: #fff;
-    border-radius: 8px;
-    padding: 5px;
-    cursor: pointer;
-    font-weight: 700;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  background: #40513b;
+  color: #fff;
+  border-radius: 8px;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.title:before{
-    content: "+";
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0 5px;
-    width: 20px;
-    text-align: center;
+.title:before {
+  content: "+";
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 5px;
+  width: 20px;
+  text-align: center;
 }
 
-.accordion[open] .title:before{
-    content: "-";
+.accordion[open] .title:before {
+  content: "-";
 }
+
 .body_pages {
-    height: 100px;
-    background-color: #EDF1D6;
-    border-radius: 5px;
+  height: 150px;
+  background-color: #edf1d6;
+  border-radius: 5px;
 }
 
-.body_repository{
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    float: right;
-    margin-left: 25px;
-    padding: 10px;
+.body_repository {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  float: right;
+  margin-left: 25px;
+  padding: 10px;
 }
 
 .name_repository {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .btn_repository {
-    border-radius: 4px;
-    background-color: #DAE2B6;
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: 15px;
-    width: 100px;
-    cursor: pointer;
-    margin: 5px;
+  border-radius: 4px;
+  background-color: #dae2b6;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  width: 100px;
+  cursor: pointer;
+  margin: 5px;
 }
 
 .link_repository {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-
-
-
 
