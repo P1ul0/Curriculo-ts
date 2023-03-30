@@ -1,6 +1,7 @@
 
 .body_education{
-    width: 1000px;
+    min-width: 700px;
+    max-width: 700px;
     margin: 10px 0;
 }
 
@@ -31,7 +32,7 @@
 .text_education {
     display: flex;
     flex-direction: column;
-    height: 150px;
+    height: 200px;
     background-color: #EDF1D6;
     border-radius: 5px;
 }

@@ -1,8 +1,8 @@
 
 .header {
     display: flex;
-    width: 100.8%;
-    max-height: 100%;
+    min-width: 500px;
+    max-width: 100vw;
     background-color: #40513B;
 }
 
@@ -16,6 +16,5 @@
     width: 64px;
     height: 64px;
     color: #EDF1D6;
-
 }
 

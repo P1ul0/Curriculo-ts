@@ -3,7 +3,8 @@
 }
 
 .body_center {
-  width: 1000px;
+  width: 700px;
+  max-width: 700px;
   margin: 10px 0;
 }
 .title {
@@ -34,7 +35,6 @@
 .body_pages {
   display: flex;
   flex-flow: column wrap;
-  min-width: 1000px;
   height: 180px;
   background-color: #edf1d6;
   border-radius: 5px;
@@ -43,7 +43,7 @@
 .body_repository {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  max-width: 300px;
   float: right;
   margin-left: 25px;
   padding: 10px;

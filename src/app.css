@@ -1,6 +1,6 @@
 .app{   
-    width: 98vw;
-    height: 96vh;
+    min-width: 500px;
+    max-width: 100vw;
     background-color: #EDF1D6;
     margin: 0;
 }

@@ -8,8 +8,10 @@
     bottom: 0;
     background-color: #40513B;
     color: #EDF1D6;
-    width: 100.8%;
-    height: 50px;    
+    min-width: 500px;
+    max-width: 100vw;
+    height: 72px;    
     text-align: center;
-    margin-top: 137.5px;
+    margin-top: 83px;
+    margin-bottom: 0;
 }

@@ -1,5 +1,6 @@
 .body_skill {
-  width: 1000px;
+  width: 700px;
+  max-width: 700px;
   margin: 10px 0;
 }
 
