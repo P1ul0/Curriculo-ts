@@ -17,7 +17,7 @@ export function Repository() {
     (repository) =>
       repository.name === "api-carros" ||
       repository.name === "agendatarefa" ||
-      repository.name === "Calculadora"
+      repository.name === "ecommerce"
   );
 
   return (
@@ -44,8 +44,8 @@ export function Repository() {
                  </a>:
                <></>
               }
-                {repository.name === "Calculadora"  ?
-                 <a className="img_github"href="https://p1ul0.github.io/Calculadora/" target="_blank">
+                {repository.name === "ecommerce"  ?
+                 <a className="img_github"href="https://p1ul0.github.io/ecommerce/" target="_blank">
                    <img src={img} alt="" />
                  </a>
                :

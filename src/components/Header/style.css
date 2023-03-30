@@ -1,8 +1,8 @@
 
 .header {
     display: flex;
-    width: 100vw;
-    min-height: 70px;
+    width: 100.8%;
+    max-height: 100%;
     background-color: #40513B;
 }
 
@@ -11,13 +11,11 @@
     font-size: 20px;
     color: #EDF1D6;
     font-weight: bold;
-    margin-top: 15px;
 }
 .img_header {
     width: 64px;
     height: 64px;
     color: #EDF1D6;
-    margin-right: 20px ;
-    
+
 }
 

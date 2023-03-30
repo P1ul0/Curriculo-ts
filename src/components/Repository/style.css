@@ -32,7 +32,10 @@
 }
 
 .body_pages {
-  height: 150px;
+  display: flex;
+  flex-flow: column wrap;
+  min-width: 1000px;
+  height: 180px;
   background-color: #edf1d6;
   border-radius: 5px;
 }
